@@ -1,0 +1,7 @@
+@EndUserText.label: 'Service definition for accounting document details'
+define service ZST7_ACCHDR_POOL_SRV_DEF {
+  expose ZST7_ACCHDR_POOL;
+  expose ZST7_ACCITEM_POOL;
+  expose ZST7_ACCDATA_CONS_VIEW;
+  expose ZST7_ACCDATA_ITEMS_VIEW;
+}

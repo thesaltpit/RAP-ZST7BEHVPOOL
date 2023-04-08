@@ -1,0 +1,26 @@
+//Behaviour defintion for behaviour pool
+managed implementation in class zst7_zbp_st7_acchdr_pool unique;
+
+define behavior for ZST7_ACCHDR_POOL alias AccountHeader
+persistent table zst7acchdr_tb
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  association _items { create; }
+}
+
+define behavior for ZST7_ACCITEM_POOL //alias AccountItems
+persistent table zst7accitm_tb
+lock dependent by _header
+//authorization dependent by <association>
+//etag master <field_name>
+{
+  update;
+  delete;
+  field( readonly ) compcode, docno, fiscyear;
+  association _header;
+}

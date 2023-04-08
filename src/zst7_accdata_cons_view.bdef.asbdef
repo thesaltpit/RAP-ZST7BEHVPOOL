@@ -1,0 +1,18 @@
+projection;
+
+define behavior for ZST7_ACCDATA_CONS_VIEW //alias <alias_name>
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _items { create; }
+}
+
+define behavior for ZST7_ACCDATA_ITEMS_VIEW //alias <alias_name>
+{
+  use update;
+  use delete;
+
+  use association _header;
+}

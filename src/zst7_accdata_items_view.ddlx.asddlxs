@@ -1,0 +1,55 @@
+@Metadata.layer: #CORE
+annotate view ZST7_ACCDATA_ITEMS_VIEW with
+{
+  @UI.facet: [
+
+    {
+        id:'AccountItemSection',
+        type: #IDENTIFICATION_REFERENCE,
+        label: 'Accounting Items'
+    }
+
+  ]
+
+  @UI.lineItem: [{ position: 10, label: 'Company Code' }]
+  @UI.identification: [{ position: 10, label: 'Company Code'}]
+  compcode;
+  @UI.lineItem: [{ position: 20, label: 'Document Number' }]
+  @UI.identification: [{ position: 20, label: 'Doc. No.'}]
+  docno;
+  @UI.lineItem: [{ position: 30, label: 'Fiscal Year' }]
+  @UI.identification: [{ position: 30, label: 'FIscal Yr.'}]
+  fiscyear;
+  @UI.lineItem: [{ position: 40, label: 'Line Number' }]
+  @UI.identification: [{ position: 40, label: 'Line No.'}]
+  linenum;
+  @UI.lineItem: [{ position: 50, label: 'Posting Key' }]
+  @UI.identification: [{ position: 50, label: 'Posting Key'}]
+  postkey;
+  @UI.lineItem: [{ position: 60, label: 'Account Type' }]
+  @UI.identification: [{ position: 60, label: 'Account Type'}]
+  acctype;
+  @UI.lineItem: [{ position: 70, label: 'Debit/Credit' }]
+  @UI.identification: [{ position: 70, label: 'Debit/Credit'}]
+  dbcrindc;
+  @UI.lineItem: [{ position: 80, label: 'Business Area' }]
+  @UI.identification: [{ position: 80, label: 'Business Area'}]
+  bussarea;
+  @UI.lineItem: [{ position: 90, label: 'Amount' }]
+  @UI.identification: [{ position: 90, label: 'Amount'}]
+  amount;
+  @UI.lineItem: [{ position: 100, label: 'Tax Code' }]
+  @UI.identification: [{ position: 100, label: 'Tax Code'}]
+  taxcode;
+  @UI.lineItem: [{ position: 110, label: 'Tax Amount' }]
+  @UI.identification: [{ position: 110, label: 'Tax Amt'}]
+  taxamt;
+  @UI.lineItem: [{ position: 120, label: 'Currency Code' }]
+  @UI.identification: [{ position: 120, label: 'Curr Code'}]
+  currcode;
+  @UI.lineItem: [{ position: 130, label: 'Cosy Center' }]
+  @UI.identification: [{ position: 130, label: 'Cost Cntr'}]
+  costcntr;
+
+
+}
